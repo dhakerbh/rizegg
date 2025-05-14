@@ -16,7 +16,7 @@ export default function Home() {
         />
 
         <div
-          className="flex font-['Oxanium'] text-sm/4.5 h-screen text-gr-light bg-center "
+          className="flex font-['Oxanium'] text-sm/4.5  text-gr-light bg-center "
           style={{ backgroundImage: "url('Background.png')" }}
         >
           <div className="sidebar px-1 w-1/16 bg-sidebar  font-[oxanium]  flex flex-col items-center">
@@ -229,14 +229,14 @@ export default function Home() {
                 <span className=" bg-radial from-accent-600/30 from-1% to bg-transparent  to-60%  ">
                   <hr className=" h-[1px] mt-2 border-0 bg-gray-700 " />
                 </span>
-                <div className="rules flex gap-5 hover:text-accent-600 cursor-pointer w-fit">
+                <div className="rules flex gap-5">
                   <div className="channel-logo aspect-square p-0.5 ">
                     <img className="h-7" src="./icons/Rules.png" alt="" />{" "}
                   </div>
 
                   <p>Rules</p>
                 </div>
-                <div className="Announces flex gap-5  hover:text-accent-600 cursor-pointer w-fit">
+                <div className="Announces flex gap-5">
                   <div className="channel-logo aspect-square p-0.5">
                     <img
                       src="./icons/Announcements.png"
@@ -304,26 +304,21 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="message-content-wrapper  grow pt-4 px-2 flex flex-col my-4">
-            <div className="title flex justify-between mb-17  ">
-              <h1 className="font-medium text-white text-2xl pt-2 pl-3">
+          <div className="message-content-wrapper  grow pt-4 px-2 ">
+            <div className="title flex justify-between mb-17 ">
+              <h1 className="font-medium text-white text-[36px] ">
                 # Valorant
               </h1>
-              <div className="Finder-search  relative flex gap-4 items-center">
-                <input
-                  type="text"
-                  className="h-13 text-white
-                  focus:outline-accent-600 pl-10 focus:outline-1 rounded-2xl flex-1
-                "
-                  placeholder=""
+              <div className="search ">
+                <img
+                  src="./icons/Search.png"
+                  className="w-7 h-7 "
+                  alt="search logo"
                 />
-                <div className=" absolute right-2">
-                  <img src="./icons/Search.png" className="w-7 " alt="" />
-                </div>
               </div>
             </div>
             <div
-              className="messages  overflow-y-auto  max-h-[calc(100vh-16rem)] text-white flex flex-col gap-8 px-7 font-bold  text-md
+              className="messages overflow-y-auto  max-h-[calc(100vh-17.5rem)] text-white flex flex-col gap-8 px-7 font-medium 
             [&::-webkit-scrollbar]:w-2
   [&::-webkit-scrollbar-thumb]:bg-gray-700/20
     [&::-webkit-scrollbar-thumb]:rounded-full
@@ -331,15 +326,14 @@ export default function Home() {
             "
             >
               <div className="message-content-container flex gap-4">
-                <div className="profile-pic-msg aspect-square h-16 relative ">
+                <div className="profile-pic-msg aspect-square">
                   <img src="avatar2.png" className="h-16" alt="profile pic" />
-                  <span className="absolute bottom-1 right-1 block h-3 w-3 rounded-full bg-gr-mid  outline-4 outline-darkblue "></span>
                 </div>
                 <div className="top-msg-cont flex flex-col gap-4">
                   <div className="message-content flex flex-col">
                     <div className="message-title flex items-center gap-3">
                       <p className=" text-pink">Alexandra Tillman</p>
-                      <p className=" text-xs/4 font-light text-gr-mid">
+                      <p className=" text-[16px] text-gr-mid">
                         {" "}
                         05/06/2023 12:50PM
                       </p>
@@ -351,11 +345,11 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className="message-reactions text-lg font-normal">
+                  <div className="message-reactions">
                     <div className="reaction-cont ">
                       <div className="reaction h-9 w-16 gap-2 bg-black/20 rounded-md flex items-center justify-center outline-gray-400/50 outline-1  hover:bg-accent-600/30 hover:cursor-pointer">
                         <img src="./icons/Heart.png" className="w-7" alt="" />
-                        <p>2</p>
+                        <p className=" text-xl">2</p>
                       </div>
                     </div>
                   </div>
@@ -369,15 +363,14 @@ export default function Home() {
                 <div className="border-t border-gr-mid flex-grow"></div>
               </div>
               <div className="message-content-container flex gap-4">
-                <div className="profile-pic-msg aspect-square h-16 relative">
+                <div className="profile-pic-msg aspect-square">
                   <img src="avatar1.png" className="h-16" alt="profile pic" />
-                  <span className="absolute bottom-1 right-1 block h-3 w-3 rounded-full bg-accent-600 border-0 outline-4 outline-darkblue "></span>
                 </div>
                 <div className="top-msg-cont flex flex-col gap-4">
                   <div className="message-content flex flex-col">
                     <div className="message-title flex items-center gap-3">
                       <p className=" text-orange">Sam McDermot</p>
-                      <p className=" text-xs/4 font-light text-gr-mid">
+                      <p className=" text-[16px] text-gr-mid">
                         {" "}
                         05/06/2023 12:50PM
                       </p>
@@ -389,15 +382,15 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className="message-reactions text-lg font-normal">
+                  <div className="message-reactions">
                     <div className="reaction-cont flex gap-2">
                       <div className="reaction h-9 w-16 gap-2 bg-black/20 rounded-md flex items-center justify-center outline-cyan-200/50 outline-1   hover:bg-accent-600/30 hover:cursor-pointer">
                         <img src="./icons/Heart.png" className="w-7" alt="" />
-                        <p>2</p>
+                        <p className=" text-xl">2</p>
                       </div>
                       <div className="reaction h-9 w-16 gap-2 bg-black/20 rounded-md flex items-center justify-center outline-cyan-200/50 outline-1   hover:bg-accent-600/30 hover:cursor-pointer">
                         <img src="./icons/Fire.png" className="w-7" alt="" />
-                        <p>1</p>
+                        <p className=" text-xl">1</p>
                       </div>
                     </div>
                   </div>
@@ -405,15 +398,14 @@ export default function Home() {
               </div>
 
               <div className="message-content-container flex gap-4">
-                <div className="profile-pic-msg aspect-square h-16 relative ">
+                <div className="profile-pic-msg aspect-square">
                   <img src="avatar2.png" className="h-16" alt="profile pic" />
-                  <span className="absolute bottom-1 right-1 block h-3 w-3 rounded-full bg-gr-mid  outline-4 outline-darkblue "></span>
                 </div>
                 <div className="top-msg-cont flex flex-col gap-4">
                   <div className="message-content flex flex-col">
                     <div className="message-title flex items-center gap-3">
                       <p className=" text-pink">Alexandra Tillman</p>
-                      <p className=" text-xs/4 font-light text-gr-mid">
+                      <p className=" text-[16px] text-gr-mid">
                         {" "}
                         05/06/2023 12:50PM
                       </p>
@@ -428,15 +420,14 @@ export default function Home() {
                 </div>
               </div>
               <div className="message-content-container flex gap-4">
-                <div className="profile-pic-msg aspect-square h-16 relative">
+                <div className="profile-pic-msg aspect-square">
                   <img src="avatar1.png" className="h-16" alt="profile pic" />
-                  <span className="absolute bottom-1 right-1 block h-3 w-3 rounded-full bg-accent-600 border-0 outline-4 outline-darkblue "></span>
                 </div>
                 <div className="top-msg-cont flex flex-col gap-4">
                   <div className="message-content flex flex-col">
                     <div className="message-title flex items-center gap-3">
                       <p className=" text-orange">Sam McDermot</p>
-                      <p className=" text-xs/4 font-light text-gr-mid">
+                      <p className=" text-[16px] text-gr-mid">
                         {" "}
                         05/06/2023 12:50PM
                       </p>
@@ -448,7 +439,7 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className="message-reactions text-lg font-normal">
+                  <div className="message-reactions">
                     <div className="reaction-cont ">
                       <div className="reaction h-9 w-16 gap-2 bg-black/20 rounded-md flex items-center justify-center outline-cyan-200/50 outline-1   hover:bg-accent-600/30 hover:cursor-pointer">
                         <img src="./icons/Fire.png" className="w-7" alt="" />
@@ -459,15 +450,14 @@ export default function Home() {
                 </div>
               </div>
               <div className="message-content-container flex gap-4">
-                <div className="profile-pic-msg aspect-square h-16 relative ">
+                <div className="profile-pic-msg aspect-square">
                   <img src="avatar2.png" className="h-16" alt="profile pic" />
-                  <span className="absolute bottom-1 right-1 block h-3 w-3 rounded-full bg-gr-mid  outline-4 outline-darkblue "></span>
                 </div>
                 <div className="top-msg-cont flex flex-col gap-4">
                   <div className="message-content flex flex-col">
                     <div className="message-title flex items-center gap-3">
                       <p className=" text-pink">Alexandra Tillman</p>
-                      <p className=" text-xs/4 font-light text-gr-mid">
+                      <p className=" text-[16px] text-gr-mid">
                         {" "}
                         05/06/2023 12:50PM
                       </p>
@@ -482,15 +472,14 @@ export default function Home() {
                 </div>
               </div>
               <div className="message-content-container flex gap-4">
-                <div className="profile-pic-msg aspect-square h-16 relative">
+                <div className="profile-pic-msg aspect-square">
                   <img src="avatar1.png" className="h-16" alt="profile pic" />
-                  <span className="absolute bottom-1 right-1 block h-3 w-3 rounded-full bg-accent-600 border-0 outline-4 outline-darkblue "></span>
                 </div>
                 <div className="top-msg-cont flex flex-col gap-4">
                   <div className="message-content flex flex-col">
                     <div className="message-title flex items-center gap-3">
                       <p className=" text-orange">Sam McDermot</p>
-                      <p className=" text-xs/4 font-light text-gr-mid">
+                      <p className=" text-[16px] text-gr-mid">
                         {" "}
                         05/06/2023 12:50PM
                       </p>
@@ -502,7 +491,7 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className="message-reactions text-lg font-normal">
+                  <div className="message-reactions">
                     <div className="reaction-cont ">
                       <div className="reaction h-9 w-16 gap-2 bg-black/20 rounded-md flex items-center justify-center outline-cyan-200/50 outline-1   hover:bg-accent-600/30 hover:cursor-pointer">
                         <img src="./icons/Heart.png" className="w-7" alt="" />
@@ -513,15 +502,14 @@ export default function Home() {
                 </div>
               </div>
               <div className="message-content-container flex gap-4">
-                <div className="profile-pic-msg aspect-square h-16 relative ">
+                <div className="profile-pic-msg aspect-square">
                   <img src="avatar2.png" className="h-16" alt="profile pic" />
-                  <span className="absolute bottom-1 right-1 block h-3 w-3 rounded-full bg-gr-mid  outline-4 outline-darkblue "></span>
                 </div>
                 <div className="top-msg-cont flex flex-col gap-4">
                   <div className="message-content flex flex-col">
                     <div className="message-title flex items-center gap-3">
                       <p className=" text-pink">Alexandra Tillman</p>
-                      <p className=" text-xs/4 font-light text-gr-mid">
+                      <p className=" text-[16px] text-gr-mid">
                         {" "}
                         05/06/2023 12:50PM
                       </p>
@@ -536,15 +524,14 @@ export default function Home() {
                 </div>
               </div>
               <div className="message-content-container flex gap-4">
-                <div className="profile-pic-msg aspect-square h-16 relative">
+                <div className="profile-pic-msg aspect-square">
                   <img src="avatar1.png" className="h-16" alt="profile pic" />
-                  <span className="absolute bottom-1 right-1 block h-3 w-3 rounded-full bg-accent-600 border-0 outline-4 outline-darkblue "></span>
                 </div>
                 <div className="top-msg-cont flex flex-col gap-4">
                   <div className="message-content flex flex-col">
                     <div className="message-title flex items-center gap-3">
                       <p className=" text-orange">Sam McDermot</p>
-                      <p className=" text-xs/4 font-light text-gr-mid">
+                      <p className=" text-[16px] text-gr-mid">
                         {" "}
                         05/06/2023 12:50PM
                       </p>
@@ -561,7 +548,7 @@ export default function Home() {
             </div>
             <form
               action=""
-              className="h-25 mt-7 flex p-5 bg-darkblue rounded-4xl items-center gap-2"
+              className="h-25 mt-7  flex p-5 bg-darkblue rounded-4xl items-center gap-2"
             >
               <div className="attachement h-15 w-15 bg-gr-dark rounded-full flex items-center justify-center">
                 <label htmlFor="attachment" className="">
@@ -607,27 +594,25 @@ export default function Home() {
           </div>
           <div className="navigation-bar-FF flex flex-col text-xs/5 ">
             <div className="navigation-bar flex justify-end items-center gap-4 h-14 m-6 ">
-              <div className="pin flex justify-center items-center p-3 bg-darkblue hover:bg-accent-600/50  cursor-pointer rounded-full">
+              <div className="pin flex justify-center items-center p-3 bg-amber-400/50 rounded-full">
                 <img src="./icons/Pin.png" className="h-7" alt="pin" />
               </div>
-              <div className="messages flex justify-center items-center p-3 bg-darkblue  hover:bg-accent-600/50  cursor-pointer rounded-full">
+              <div className="messages flex justify-center items-center p-3 bg-amber-400/50 rounded-full">
                 <img src="./icons/Message.png" className="h-7" alt="messages" />
               </div>
-              <div className="notifications relative flex justify-center items-center p-3 bg-darkblue  hover:bg-accent-600/50  cursor-pointer rounded-full">
+              <div className="notifications flex justify-center items-center p-3 bg-amber-400/50 rounded-full">
                 <img
                   src="./icons/Notification.png"
                   className="h-7"
                   alt="notifications"
                 />
-
-                <span className="absolute top-0 right-0 block h-3 w-3 rounded-full bg-accent-600   "></span>
               </div>
-              <div className="drawer flex justify-center items-center p-3 bg-accent-600  rounded-full">
+              <div className="drawer flex justify-center items-center p-3 bg-amber-400/50 rounded-full">
                 <img src="./icons/Menu.png" className="h-7" alt="drawer" />
               </div>
             </div>
 
-            <div className="finder-feed-wrapper flex justify-center flex-col h-9/10 w-md ">
+            <div className="finder-feed-wrapper flex justify-center flex-col h-8/10  ">
               <div
                 className="Finder-wrapper flex flex-col gap-4  bg-darkblue/30 rounded-l-4xl px-8 pt-6  max-h-[43vh] overflow-y-auto
               [&::-webkit-scrollbar]:w-2
@@ -635,15 +620,15 @@ export default function Home() {
     [&::-webkit-scrollbar-thumb]:rounded-full
               "
               >
-                <h2 className="text-xl font-semibold text-white">Finder</h2>
+                <h2>Finder</h2>
                 <div className="finder-filters flex gap-2 jus text-[14px]">
-                  <div className="group-f hover:bg-accent-600/20 rounded-4xl bg-black/50 outline-gray-200/30 outline-1 py-2 px-6 hover:outline-accent-600 cursor-pointer ">
+                  <div className="group-f rounded-4xl bg-black/50 outline-gray-200/30 outline-1 py-2 px-6 hover:outline-cyan-100/80">
                     <p>Group</p>
                   </div>
-                  <div className="Club-f Tournament-f rounded-4xl text-black bg-accent-600 outline-1 py-2 px-6">
+                  <div className="Club-f Tournament-f rounded-4xl text-black bg-cyan-200 outline-1 py-2 px-6">
                     <p>Club</p>
                   </div>
-                  <div className="rounded-4xl hover:bg-accent-600/20 bg-black/50 outline-gray-200/30 outline-1 py-2 px-6 hover:outline-accent-600 cursor-pointer ">
+                  <div className="rounded-4xl bg-black/50 outline-gray-200/30 outline-1 py-2 px-6 hover:outline-cyan-100/80 ">
                     <p>Tournament</p>
                   </div>
                 </div>
@@ -677,17 +662,12 @@ export default function Home() {
                     </div>
                     <div className="Finder-element-data flex flex-col gap-3">
                       <div className="fetitle flex gap-3">
-                        <p className="text-base">Angry EA Sharks</p>
+                        <p>Angry EA Sharks</p>
                         <img src="./icons/saudi.png" alt="country" />
                       </div>
-                      <div className="event-time flex ">
-                        <img
-                          src="./icons/Time.png"
-                          className="w-4 h-4"
-                          alt=""
-                        />
-                        <p className="text-gray-400 text-sm ">:UTC/GMT +2</p>
-                      </div>
+                      <p className="text-gray-400 text-sm ">
+                        *TIME*:UTC/GMT +2
+                      </p>
                     </div>
                     <div className="join flex items-center justify-center outline-1 text-cyan-200 outline-cyan-200/50 px-4 py-2 bg-cyan-200/20 rounded-4xl">
                       <input type="button" value="Join Now" />
@@ -700,17 +680,12 @@ export default function Home() {
                     </div>
                     <div className="Finder-element-data flex flex-col gap-3">
                       <div className="fetitle flex gap-3">
-                        <p className="text-base">We Scale Late</p>
+                        <p>We Scale Late</p>
                         <img src="./icons/saudi.png" alt="country" />
                       </div>
-                      <div className="event-time flex ">
-                        <img
-                          src="./icons/Time.png"
-                          className="w-4 h-4"
-                          alt=""
-                        />
-                        <p className="text-gray-400 text-sm ">:UTC/GMT +2</p>
-                      </div>
+                      <p className="text-gray-400 text-sm ">
+                        *TIME*:UTC/GMT +2
+                      </p>
                     </div>
                     <div className="join flex items-center justify-center outline-1 text-cyan-200 outline-cyan-200/50 px-4 py-2 bg-cyan-200/20 rounded-4xl">
                       <input type="button" value="Join Now" />
@@ -723,17 +698,12 @@ export default function Home() {
                     </div>
                     <div className="Finder-element-data flex flex-col gap-3">
                       <div className="fetitle flex gap-3">
-                        <p className="text-base">Baron Thieves</p>
+                        <p>Baron Thieves</p>
                         <img src="./icons/saudi.png" alt="country" />
                       </div>
-                      <div className="event-time flex ">
-                        <img
-                          src="./icons/Time.png"
-                          className="w-4 h-4"
-                          alt=""
-                        />
-                        <p className="text-gray-400 text-sm ">:UTC/GMT +2</p>
-                      </div>
+                      <p className="text-gray-400 text-sm ">
+                        *TIME*:UTC/GMT +2
+                      </p>
                     </div>
                     <div className="join flex items-center justify-center outline-1 text-cyan-200 outline-cyan-200/50 px-4 py-2 bg-cyan-200/20 rounded-4xl">
                       <input type="button" value="Join Now" />
@@ -746,17 +716,12 @@ export default function Home() {
                     </div>
                     <div className="Finder-element-data flex flex-col gap-3">
                       <div className="fetitle flex gap-3">
-                        <p className="text-base">Tiltproofi-ish</p>
+                        <p>Tiltproofi-ish</p>
                         <img src="./icons/saudi.png" alt="country" />
                       </div>
-                      <div className="event-time flex ">
-                        <img
-                          src="./icons/Time.png"
-                          className="w-4 h-4"
-                          alt=""
-                        />
-                        <p className="text-gray-400 text-sm ">:UTC/GMT +2</p>
-                      </div>
+                      <p className="text-gray-400 text-sm ">
+                        *TIME*:UTC/GMT +2
+                      </p>
                     </div>
                     <div className="join flex items-center justify-center outline-1 text-cyan-200 outline-cyan-200/50 px-4 py-2 bg-cyan-200/20 rounded-4xl">
                       <input type="button" value="Join Now" />
@@ -770,17 +735,12 @@ export default function Home() {
                       </div>
                       <div className="Finder-element-data flex flex-col gap-3">
                         <div className="fetitle flex gap-3">
-                          <p className="text-base">Angry EA Sharks</p>
+                          <p>Angry EA Sharks</p>
                           <img src="./icons/saudi.png" alt="country" />
                         </div>
-                        <div className="event-time flex ">
-                          <img
-                            src="./icons/Time.png"
-                            className="w-4 h-4"
-                            alt=""
-                          />
-                          <p className="text-gray-400 text-sm ">:UTC/GMT +2</p>
-                        </div>
+                        <p className="text-gray-400 text-sm ">
+                          *TIME*:UTC/GMT +2
+                        </p>
                       </div>
                       <div className="join flex items-center justify-center outline-1 text-cyan-200 outline-cyan-200/50 px-4 py-2 bg-cyan-200/20 rounded-4xl">
                         <input type="button" value="Join Now" />
@@ -797,7 +757,7 @@ export default function Home() {
     [&::-webkit-scrollbar-thumb]:rounded-full
               "
               >
-                <h2 className="text-xl font-semibold text-white">Feed</h2>
+                <h2>Feed</h2>
                 <div className="feed-contents flex flex-col gap-4">
                   <div className="feed-element flex gap-2 p-3 items-center outline-gray-200/20 outline-2 rounded-2xl">
                     <div
